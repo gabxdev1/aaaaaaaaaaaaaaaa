@@ -7,9 +7,9 @@ services:
     container_name: gaxdev_backend-1
     restart: no
     environment:
-      ROUNDING_MODE: HALF_UP
-      SCALE: 8
-      KEEP_ALIVE: 100000
+      ROUNDING_MODE: HALF_DOWN
+      SCALE: 10
+      KEEP_ALIVE: 150
       THREADS_VIRTUAL_ENABLED: true
       HTTP_CLIENT_WORKER: 20
       TIMEOUT_DEFAULT: 240
@@ -69,9 +69,9 @@ services:
     container_name: gaxdev_backend-2
     restart: always
     environment:
-      ROUNDING_MODE: HALF_UP
-      SCALE: 8
-      KEEP_ALIVE: 100000
+      ROUNDING_MODE: HALF_DOWN
+      SCALE: 10
+      KEEP_ALIVE: 150
       THREADS_VIRTUAL_ENABLED: true
       HTTP_CLIENT_WORKER: 20
       TIMEOUT_DEFAULT: 240
